@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.netology.tests.CreditCardTest" tests="28" skipped="0" failures="10" errors="0" timestamp="2023-07-16T10:49:14" hostname="LAPTOP-J2AP817K" time="137.985">
+<testsuite name="ru.netology.tests.CreditCardTest" tests="28" skipped="0" failures="10" errors="0" timestamp="2023-07-23T16:50:27" hostname="LAPTOP-J2AP817K" time="150.068">
   <properties/>
-  <testcase name="shouldNotEnoughCharInNumber()" classname="ru.netology.tests.CreditCardTest" time="2.286"/>
-  <testcase name="shouldWithEmptyFieldYear()" classname="ru.netology.tests.CreditCardTest" time="2.436"/>
-  <testcase name="shouldIncorrectLayoutInOwner()" classname="ru.netology.tests.CreditCardTest" time="7.069">
-    <failure message="Element not found {.input__sub}&#13;&#10;Expected: text 'Неверно указан срок действия карты'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504565649.10.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504565649.10.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {.input__sub}
+  <testcase name="shouldNotEnoughCharInNumber()" classname="ru.netology.tests.CreditCardTest" time="3.251"/>
+  <testcase name="shouldWithEmptyFieldYear()" classname="ru.netology.tests.CreditCardTest" time="2.865"/>
+  <testcase name="shouldIncorrectLayoutInOwner()" classname="ru.netology.tests.CreditCardTest" time="7.607">
+    <failure message="Element not found {.input__sub}&#13;&#10;Expected: text 'Неверно указан срок действия карты'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131040776.9.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131040776.9.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {.input__sub}
 Expected: text 'Неверно указан срок действия карты'
-Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504565649.10.png
-Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504565649.10.html
+Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131040776.9.png
+Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131040776.9.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:83)
@@ -111,15 +111,15 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
-  (Session info: chrome=114.0.5735.199)
+  (Session info: chrome=115.0.5790.102)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-J2AP817K', ip: '172.20.10.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+System info: host: 'LAPTOP-J2AP817K', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Elina\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ce02e7a2dedf0bdae23211a61166d4c
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Elina\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 899967f1547786e273bd9b1f48c2b611
 *** Element info: {Using=css selector, value=.input__sub}
-	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
 	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.15.1/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -139,13 +139,13 @@ Session ID: 4ce02e7a2dedf0bdae23211a61166d4c
 	... 97 more
 </failure>
   </testcase>
-  <testcase name="shouldLettersCharInNumber()" classname="ru.netology.tests.CreditCardTest" time="2.511"/>
-  <testcase name="shouldLowerBoundInYear()" classname="ru.netology.tests.CreditCardTest" time="2.551"/>
-  <testcase name="shouldSpecSymbolCharInCvv()" classname="ru.netology.tests.CreditCardTest" time="6.912">
-    <failure message="Element should have text 'Неверный формат' {.input__sub}&#13;&#10;Element: '&lt;span class=&quot;input__sub&quot;&gt;Поле обязательно для заполнения&lt;/span&gt;'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504577665.11.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504577665.11.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should have text 'Неверный формат' {.input__sub}
+  <testcase name="shouldLettersCharInNumber()" classname="ru.netology.tests.CreditCardTest" time="2.631"/>
+  <testcase name="shouldLowerBoundInYear()" classname="ru.netology.tests.CreditCardTest" time="2.531"/>
+  <testcase name="shouldSpecSymbolCharInCvv()" classname="ru.netology.tests.CreditCardTest" time="7.617">
+    <failure message="Element should have text 'Неверный формат' {.input__sub}&#13;&#10;Element: '&lt;span class=&quot;input__sub&quot;&gt;Поле обязательно для заполнения&lt;/span&gt;'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131053558.10.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131053558.10.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should have text 'Неверный формат' {.input__sub}
 Element: '&lt;span class=&quot;input__sub&quot;&gt;Поле обязательно для заполнения&lt;/span&gt;'
-Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504577665.11.png
-Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504577665.11.html
+Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131053558.10.png
+Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131053558.10.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:121)
 	at app//com.codeborne.selenide.commands.Should.execute(Should.java:30)
@@ -247,11 +247,11 @@ Timeout: 4 s.
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="shouldBeDeclinedPurchaseTourCredit()" classname="ru.netology.tests.CreditCardTest" time="18.031">
-    <failure message="Element should have text 'Ошибка! Банк отказал в проведении операции.' {.notification_status_error .notification__content}&#13;&#10;Element: '&lt;div class=&quot;notification__content&quot; displayed:false&gt;&lt;/div&gt;'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504595579.12.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504595579.12.html&#13;&#10;Timeout: 15 s." type="com.codeborne.selenide.ex.ElementShould">Element should have text 'Ошибка! Банк отказал в проведении операции.' {.notification_status_error .notification__content}
+  <testcase name="shouldBeDeclinedPurchaseTourCredit()" classname="ru.netology.tests.CreditCardTest" time="18.771">
+    <failure message="Element should have text 'Ошибка! Банк отказал в проведении операции.' {.notification_status_error .notification__content}&#13;&#10;Element: '&lt;div class=&quot;notification__content&quot; displayed:false&gt;&lt;/div&gt;'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131072199.11.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131072199.11.html&#13;&#10;Timeout: 15 s." type="com.codeborne.selenide.ex.ElementShould">Element should have text 'Ошибка! Банк отказал в проведении операции.' {.notification_status_error .notification__content}
 Element: '&lt;div class=&quot;notification__content&quot; displayed:false&gt;&lt;/div&gt;'
-Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504595579.12.png
-Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504595579.12.html
+Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131072199.11.png
+Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131072199.11.html
 Timeout: 15 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:121)
 	at app//com.codeborne.selenide.commands.Should.execute(Should.java:30)
@@ -353,17 +353,17 @@ Timeout: 15 s.
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="shouldBeSuccessfulPurchaseTourCredit()" classname="ru.netology.tests.CreditCardTest" time="4.101"/>
-  <testcase name="shouldUpperBoundInYear()" classname="ru.netology.tests.CreditCardTest" time="2.844"/>
-  <testcase name="shouldLettersCharInMonth()" classname="ru.netology.tests.CreditCardTest" time="2.717"/>
-  <testcase name="shouldLettersCharInYear()" classname="ru.netology.tests.CreditCardTest" time="2.79"/>
-  <testcase name="shouldSpecSymbolCharInNumber()" classname="ru.netology.tests.CreditCardTest" time="3.064"/>
-  <testcase name="shouldLowerBoundInCvv()" classname="ru.netology.tests.CreditCardTest" time="3.419"/>
-  <testcase name="shouldLettersLettersInCvv()" classname="ru.netology.tests.CreditCardTest" time="8.174">
-    <failure message="Element should have text 'Неверный формат' {.input__sub}&#13;&#10;Element: '&lt;span class=&quot;input__sub&quot;&gt;Поле обязательно для заполнения&lt;/span&gt;'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504622462.13.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504622462.13.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should have text 'Неверный формат' {.input__sub}
+  <testcase name="shouldBeSuccessfulPurchaseTourCredit()" classname="ru.netology.tests.CreditCardTest" time="11.037"/>
+  <testcase name="shouldUpperBoundInYear()" classname="ru.netology.tests.CreditCardTest" time="3.02"/>
+  <testcase name="shouldLettersCharInMonth()" classname="ru.netology.tests.CreditCardTest" time="2.783"/>
+  <testcase name="shouldLettersCharInYear()" classname="ru.netology.tests.CreditCardTest" time="2.811"/>
+  <testcase name="shouldSpecSymbolCharInNumber()" classname="ru.netology.tests.CreditCardTest" time="2.811"/>
+  <testcase name="shouldLowerBoundInCvv()" classname="ru.netology.tests.CreditCardTest" time="2.867"/>
+  <testcase name="shouldLettersLettersInCvv()" classname="ru.netology.tests.CreditCardTest" time="7.621">
+    <failure message="Element should have text 'Неверный формат' {.input__sub}&#13;&#10;Element: '&lt;span class=&quot;input__sub&quot;&gt;Поле обязательно для заполнения&lt;/span&gt;'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131105252.12.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131105252.12.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should have text 'Неверный формат' {.input__sub}
 Element: '&lt;span class=&quot;input__sub&quot;&gt;Поле обязательно для заполнения&lt;/span&gt;'
-Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504622462.13.png
-Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504622462.13.html
+Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131105252.12.png
+Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131105252.12.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:121)
 	at app//com.codeborne.selenide.commands.Should.execute(Should.java:30)
@@ -465,11 +465,11 @@ Timeout: 4 s.
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="shouldLowerBoundInOwner()" classname="ru.netology.tests.CreditCardTest" time="8.43">
-    <failure message="Element not found {.input__sub}&#13;&#10;Expected: text 'Истёк срок действия карты'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504631285.14.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504631285.14.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {.input__sub}
+  <testcase name="shouldLowerBoundInOwner()" classname="ru.netology.tests.CreditCardTest" time="7.684">
+    <failure message="Element not found {.input__sub}&#13;&#10;Expected: text 'Истёк срок действия карты'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131112871.13.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131112871.13.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {.input__sub}
 Expected: text 'Истёк срок действия карты'
-Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504631285.14.png
-Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504631285.14.html
+Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131112871.13.png
+Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131112871.13.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:83)
@@ -573,15 +573,15 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
-  (Session info: chrome=114.0.5735.199)
+  (Session info: chrome=115.0.5790.102)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-J2AP817K', ip: '172.20.10.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+System info: host: 'LAPTOP-J2AP817K', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Elina\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ce02e7a2dedf0bdae23211a61166d4c
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Elina\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 899967f1547786e273bd9b1f48c2b611
 *** Element info: {Using=css selector, value=.input__sub}
-	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
 	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.15.1/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -601,13 +601,13 @@ Session ID: 4ce02e7a2dedf0bdae23211a61166d4c
 	... 97 more
 </failure>
   </testcase>
-  <testcase name="shouldSpecSymbolCharInYear()" classname="ru.netology.tests.CreditCardTest" time="3.603"/>
-  <testcase name="shouldSpecSymbolCharInMonth()" classname="ru.netology.tests.CreditCardTest" time="3.516"/>
-  <testcase name="shouldSpecSymbolCharInOwner()" classname="ru.netology.tests.CreditCardTest" time="7.119">
-    <failure message="Element not found {.input__sub}&#13;&#10;Expected: text 'Неверный формат'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504645490.15.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504645490.15.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {.input__sub}
+  <testcase name="shouldSpecSymbolCharInYear()" classname="ru.netology.tests.CreditCardTest" time="2.758"/>
+  <testcase name="shouldSpecSymbolCharInMonth()" classname="ru.netology.tests.CreditCardTest" time="2.931"/>
+  <testcase name="shouldSpecSymbolCharInOwner()" classname="ru.netology.tests.CreditCardTest" time="8.008">
+    <failure message="Element not found {.input__sub}&#13;&#10;Expected: text 'Неверный формат'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131126525.14.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131126525.14.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {.input__sub}
 Expected: text 'Неверный формат'
-Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504645490.15.png
-Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504645490.15.html
+Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131126525.14.png
+Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131126525.14.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:83)
@@ -711,15 +711,15 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
-  (Session info: chrome=114.0.5735.199)
+  (Session info: chrome=115.0.5790.102)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-J2AP817K', ip: '172.20.10.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+System info: host: 'LAPTOP-J2AP817K', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Elina\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ce02e7a2dedf0bdae23211a61166d4c
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Elina\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 899967f1547786e273bd9b1f48c2b611
 *** Element info: {Using=css selector, value=.input__sub}
-	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
 	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.15.1/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -739,11 +739,11 @@ Session ID: 4ce02e7a2dedf0bdae23211a61166d4c
 	... 97 more
 </failure>
   </testcase>
-  <testcase name="shouldLettersNumberInOwner()" classname="ru.netology.tests.CreditCardTest" time="6.881">
-    <failure message="Element not found {.input__sub}&#13;&#10;Expected: text 'Неверный формат'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504652302.16.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504652302.16.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {.input__sub}
+  <testcase name="shouldLettersNumberInOwner()" classname="ru.netology.tests.CreditCardTest" time="7.821">
+    <failure message="Element not found {.input__sub}&#13;&#10;Expected: text 'Неверный формат'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131134434.15.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131134434.15.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {.input__sub}
 Expected: text 'Неверный формат'
-Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504652302.16.png
-Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504652302.16.html
+Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131134434.15.png
+Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131134434.15.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:83)
@@ -847,15 +847,15 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
-  (Session info: chrome=114.0.5735.199)
+  (Session info: chrome=115.0.5790.102)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-J2AP817K', ip: '172.20.10.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+System info: host: 'LAPTOP-J2AP817K', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Elina\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ce02e7a2dedf0bdae23211a61166d4c
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Elina\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 899967f1547786e273bd9b1f48c2b611
 *** Element info: {Using=css selector, value=.input__sub}
-	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
 	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.15.1/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -875,9 +875,9 @@ Session ID: 4ce02e7a2dedf0bdae23211a61166d4c
 	... 97 more
 </failure>
   </testcase>
-  <testcase name="shouldWithEmptyFieldMonth()" classname="ru.netology.tests.CreditCardTest" time="4.559"/>
-  <testcase name="shouldWithEmptyFieldOwner()" classname="ru.netology.tests.CreditCardTest" time="2.462"/>
-  <testcase name="shouldInvalidPurchaseTourCredit()" classname="ru.netology.tests.CreditCardTest" time="8.173">
+  <testcase name="shouldWithEmptyFieldMonth()" classname="ru.netology.tests.CreditCardTest" time="2.847"/>
+  <testcase name="shouldWithEmptyFieldOwner()" classname="ru.netology.tests.CreditCardTest" time="2.676"/>
+  <testcase name="shouldInvalidPurchaseTourCredit()" classname="ru.netology.tests.CreditCardTest" time="10.302">
     <failure message="org.opentest4j.AssertionFailedError: expected: not &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: not &lt;null&gt;
 	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at app//org.junit.jupiter.api.Assertions.fail(Assertions.java:134)
@@ -977,12 +977,12 @@ Session ID: 4ce02e7a2dedf0bdae23211a61166d4c
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="shouldUpperBoundInMonth()" classname="ru.netology.tests.CreditCardTest" time="2.632"/>
-  <testcase name="shouldUpperBoundInOwner()" classname="ru.netology.tests.CreditCardTest" time="7.311">
-    <failure message="Element not found {.input__sub}&#13;&#10;Expected: text 'Неверно указан срок действия карты'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504677448.17.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504677448.17.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {.input__sub}
+  <testcase name="shouldUpperBoundInMonth()" classname="ru.netology.tests.CreditCardTest" time="2.76"/>
+  <testcase name="shouldUpperBoundInOwner()" classname="ru.netology.tests.CreditCardTest" time="7.844">
+    <failure message="Element not found {.input__sub}&#13;&#10;Expected: text 'Неверно указан срок действия карты'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131160886.16.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131160886.16.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {.input__sub}
 Expected: text 'Неверно указан срок действия карты'
-Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504677448.17.png
-Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504677448.17.html
+Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131160886.16.png
+Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131160886.16.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:83)
@@ -1086,15 +1086,15 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
-  (Session info: chrome=114.0.5735.199)
+  (Session info: chrome=115.0.5790.102)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-J2AP817K', ip: '172.20.10.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+System info: host: 'LAPTOP-J2AP817K', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Elina\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ce02e7a2dedf0bdae23211a61166d4c
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Elina\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 899967f1547786e273bd9b1f48c2b611
 *** Element info: {Using=css selector, value=.input__sub}
-	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
 	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.15.1/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -1114,13 +1114,13 @@ Session ID: 4ce02e7a2dedf0bdae23211a61166d4c
 	... 97 more
 </failure>
   </testcase>
-  <testcase name="shouldWithEmptyCvv()" classname="ru.netology.tests.CreditCardTest" time="2.427"/>
-  <testcase name="shouldWithEmptyFieldNumber()" classname="ru.netology.tests.CreditCardTest" time="2.365"/>
-  <testcase name="shouldUpperBoundInCvv()" classname="ru.netology.tests.CreditCardTest" time="7.248">
-    <failure message="Element not found {.input__sub}&#13;&#10;Expected: text 'Неверный формат'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504689499.18.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504689499.18.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {.input__sub}
+  <testcase name="shouldWithEmptyCvv()" classname="ru.netology.tests.CreditCardTest" time="2.877"/>
+  <testcase name="shouldWithEmptyFieldNumber()" classname="ru.netology.tests.CreditCardTest" time="2.77"/>
+  <testcase name="shouldUpperBoundInCvv()" classname="ru.netology.tests.CreditCardTest" time="8.189">
+    <failure message="Element not found {.input__sub}&#13;&#10;Expected: text 'Неверный формат'&#13;&#10;Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131174797.17.png&#13;&#10;Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131174797.17.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {.input__sub}
 Expected: text 'Неверный формат'
-Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504689499.18.png
-Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1689504689499.18.html
+Screenshot: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131174797.17.png
+Page source: file:/C:/Users/Elina/Desktop/Java/Diplom/build/reports/tests/1690131174797.17.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:83)
@@ -1224,15 +1224,15 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
-  (Session info: chrome=114.0.5735.199)
+  (Session info: chrome=115.0.5790.102)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-J2AP817K', ip: '172.20.10.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+System info: host: 'LAPTOP-J2AP817K', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Elina\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ce02e7a2dedf0bdae23211a61166d4c
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Elina\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 899967f1547786e273bd9b1f48c2b611
 *** Element info: {Using=css selector, value=.input__sub}
-	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
 	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.15.1/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -1252,7 +1252,7 @@ Session ID: 4ce02e7a2dedf0bdae23211a61166d4c
 	... 97 more
 </failure>
   </testcase>
-  <testcase name="shouldEmptyForm()" classname="ru.netology.tests.CreditCardTest" time="2.26"/>
+  <testcase name="shouldEmptyForm()" classname="ru.netology.tests.CreditCardTest" time="2.28"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

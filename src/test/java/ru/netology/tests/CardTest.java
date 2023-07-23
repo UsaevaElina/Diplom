@@ -75,7 +75,7 @@ public class CardTest {
         SqlHelper.assertDbEmpty();
     }
     @Test
-    void shouldInvalidPurchaseTourCredit(){
+    void shouldInvalidPurchaseTour(){
         card.pay(DataHelper.getValidCardInfo().withNumber(DataHelper.invalidCardNumber()));
         card.declined();
         PaymentEntity entity = SqlHelper.paymentEntity();

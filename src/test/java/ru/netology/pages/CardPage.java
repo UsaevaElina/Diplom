@@ -32,7 +32,7 @@ public class CardPage {
     }
 
     public void approved() {
-        SelenideElement successfulNotification = $(".notification_status_ok .notification__content").shouldHave(Condition.text("Успешно. Операция одобрена Банком."), Duration.ofMillis(20000));
+        SelenideElement successfulNotification = $(".notification_status_ok .notification__content").shouldHave(Condition.text("Операция одобрена Банком."), Duration.ofMillis(20000));
         successfulNotification.shouldBe(Condition.visible);
     }
 
