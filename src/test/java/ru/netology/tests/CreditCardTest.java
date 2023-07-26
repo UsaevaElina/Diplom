@@ -36,174 +36,201 @@ public class CreditCardTest {
 
     @Test
     void shouldBeSuccessfulPurchaseTourCredit() {
-        Card cardInfo = DataHelper.getValidCardInfo();
+        Card cardInfo = DataHelper.cardNumberApproved();
         card.pay(cardInfo);
         card.approved();
         CreditRequestEntity entity = SqlHelper.creditRequestEntity();
         Assertions.assertEquals("APPROVED", entity.getStatus());
     }
+
     @Test
     void shouldBeDeclinedPurchaseTourCredit() {
-        card.pay(DataHelper.getValidCardInfo().withNumber(DataHelper.cardNumberDeclined()));
+        card.pay(DataHelper.cardNumberDeclined());
         card.declined();
         CreditRequestEntity entity = SqlHelper.creditRequestEntity();
         Assertions.assertEquals("DECLINED", entity.getStatus());
     }
+
     @Test
-    void shouldEmptyForm(){
-        card.pay(DataHelper.getEmptyCard());
+    void shouldEmptyForm() {
+        card.pay(DataHelper.cardEmpty());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
     void shouldWithEmptyFieldNumber() {
-        card.pay(DataHelper.getValidCardInfo().withNumber(DataHelper.cardNumberEmpty()));
+        card.pay(DataHelper.cardNumberEmpty());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
     void shouldNotEnoughCharInNumber() {
-        card.pay(DataHelper.getValidCardInfo().withNumber(DataHelper.cardNumberLowerBound()));
+        card.pay(DataHelper.cardNumberLowerBound());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
     void shouldLettersCharInNumber() {
-        card.pay(DataHelper.getValidCardInfo().withNumber("qwerty"));
+        card.pay(DataHelper.cardLettersCharInNumber());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
     void shouldSpecSymbolCharInNumber() {
-        card.pay(DataHelper.getValidCardInfo().withNumber("*-)=+&%"));
+        card.pay(DataHelper.cardSymbolsInNumber());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
-    void shouldInvalidPurchaseTourCredit(){
-        card.pay(DataHelper.getValidCardInfo().withNumber(DataHelper.invalidCardNumber()));
+    void shouldInvalidPurchaseTourCredit() {
+        card.pay(DataHelper.invalidCardNumber());
         card.declined();
         CreditRequestEntity entity = SqlHelper.creditRequestEntity();
         Assertions.assertNotNull(entity);
         Assertions.assertEquals("DECLINED", entity.getStatus());
     }
+
     @Test
-    void shouldWithEmptyFieldMonth(){
-        card.pay(DataHelper.getValidCardInfo().withMonth(""));
+    void shouldWithEmptyFieldMonth() {
+        card.pay(DataHelper.emptyMonth());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
-    void shouldUpperBoundInMonth(){
-        card.pay(DataHelper.getValidCardInfo().withMonth("18"));
+    void shouldUpperBoundInMonth() {
+        card.pay(DataHelper.upperBoundMonth());
         card.wrongValidityNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
     void shouldLettersCharInMonth() {
-        card.pay(DataHelper.getValidCardInfo().withMonth("qwerty"));
+        card.pay(DataHelper.lettersInMonth());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
     void shouldSpecSymbolCharInMonth() {
-        card.pay(DataHelper.getValidCardInfo().withMonth("_--=+"));
+        card.pay(DataHelper.symbolsInMonth());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
-    void shouldWithEmptyFieldYear(){
-        card.pay(DataHelper.getValidCardInfo().withYear(""));
+    void shouldWithEmptyFieldYear() {
+        card.pay(DataHelper.emptyYear());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
-    void shouldLowerBoundInYear(){
-        card.pay(DataHelper.getValidCardInfo().withYear("22"));
+    void shouldLowerBoundInYear() {
+        card.pay(DataHelper.lowerBoundYear());
         card.expiredNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
-    void shouldUpperBoundInYear(){
-        card.pay(DataHelper.getValidCardInfo().withYear("29"));
+    void shouldUpperBoundInYear() {
+        card.pay(DataHelper.upperBoundYear());
         card.wrongValidityNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
     void shouldLettersCharInYear() {
-        card.pay(DataHelper.getValidCardInfo().withYear("qwerty"));
+        card.pay(DataHelper.lettersInYear());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
     void shouldSpecSymbolCharInYear() {
-        card.pay(DataHelper.getValidCardInfo().withYear("_--=+"));
+        card.pay(DataHelper.symbolsInYear());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
-    void shouldWithEmptyFieldOwner(){
-        card.pay(DataHelper.getValidCardInfo().withName(""));
+    void shouldWithEmptyFieldOwner() {
+        card.pay(DataHelper.emptyOwner());
         card.requiredFieldNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
     void shouldLettersNumberInOwner() {
-        card.pay(DataHelper.getValidCardInfo().withName("123345"));
+        card.pay(DataHelper.numbersInOwner());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
     void shouldSpecSymbolCharInOwner() {
-        card.pay(DataHelper.getValidCardInfo().withName("_--=+"));
+        card.pay(DataHelper.specSymbolCharInOwner());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
-    void shouldLowerBoundInOwner(){
-        card.pay(DataHelper.getValidCardInfo().withName("E"));
+    void shouldLowerBoundInOwner() {
+        card.pay(DataHelper.lowerBoundInOwnerOwner());
         card.expiredNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
-    void shouldUpperBoundInOwner(){
-        card.pay(DataHelper.getValidCardInfo().withName("UsaevaElinaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"));
+    void shouldUpperBoundInOwner() {
+        card.pay(DataHelper.upperBoundInOwnerOwner());
         card.wrongValidityNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
-    void shouldIncorrectLayoutInOwner(){
-        card.pay(DataHelper.getValidCardInfo().withName("Элина Усаева"));
+    void shouldIncorrectLayoutInOwner() {
+        card.pay(DataHelper.incorrectLayoutInOwner());
         card.wrongValidityNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
-    void shouldWithEmptyCvv(){
-        card.pay(DataHelper.getValidCardInfo().withCVV(""));
+    void shouldWithEmptyCvv() {
+        card.pay(DataHelper.emptyCvv());
         card.requiredFieldNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
     void shouldLettersLettersInCvv() {
-        card.pay(DataHelper.getValidCardInfo().withCVV("qwerrt"));
+        card.pay(DataHelper.lettersInCvv());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
     void shouldSpecSymbolCharInCvv() {
-        card.pay(DataHelper.getValidCardInfo().withCVV("_--=+"));
+        card.pay(DataHelper.specSymbolCharInCvv());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
-    void shouldLowerBoundInCvv(){
-        card.pay(DataHelper.getValidCardInfo().withCVV("12"));
+    void shouldLowerBoundInCvv() {
+        card.pay(DataHelper.lowerBoundInCvv());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
+
     @Test
-    void shouldUpperBoundInCvv(){
-        card.pay(DataHelper.getValidCardInfo().withCVV("1234"));
+    void shouldUpperBoundInCvv() {
+        card.pay(DataHelper.upperBoundInCvv());
         card.wrongFormatNotification();
         SqlHelper.assertDbEmpty();
     }
