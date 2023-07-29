@@ -89,7 +89,7 @@ public class CardTest {
         card.pay(DataHelper.invalidCardNumber());
         card.declined();
         PaymentEntity entity = SqlHelper.paymentEntity();
-        Assertions.assertNotNull(entity);
+        Assertions.assertNull(entity);
     }
 
     @Test

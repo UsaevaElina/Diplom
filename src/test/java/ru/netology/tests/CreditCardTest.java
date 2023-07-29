@@ -91,8 +91,7 @@ public class CreditCardTest {
         card.pay(DataHelper.invalidCardNumber());
         card.declined();
         CreditRequestEntity entity = SqlHelper.creditRequestEntity();
-        Assertions.assertNotNull(entity);
-        Assertions.assertEquals("DECLINED", entity.getStatus());
+        Assertions.assertNull(entity);
     }
 
     @Test

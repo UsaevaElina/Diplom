@@ -11,7 +11,7 @@ import java.sql.DriverManager;
 
 
 public class SqlHelper {
-    private static final String URL = System.getProperty("datasource.url");
+    private static final String URL = System.getProperty("db.url");
     private static final String USERNAME = System.getProperty("datasource.username");
     private static final String PASSWORD = System.getProperty("datasource.password");
 
